@@ -31,3 +31,10 @@ SET Graduation = '08/09/2018'
 WHERE Name = 'Layal';
 
 12/ DELETE FROM students WHERE Name='Layal';
+
+
+14/ SELECT employees.Name, employees.Company, companies.Date FROM employees,companies WHERE employees.Company = companies.Name;
+
+15/ SELECT employees.Name FROM companies, employees WHERE employees.Company = companies.Name AND companies.date < 2000;
+
+16/ SELECT employees.Name FROM employees, companies WHERE employees.Company = companies.Name AND employees.Role='Graphic Designer';
